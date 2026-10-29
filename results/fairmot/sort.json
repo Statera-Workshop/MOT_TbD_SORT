@@ -1,0 +1,77 @@
+{
+ "tracker": "sort",
+ "run": "kittimots_fairmot",
+ "source": "kittimots",
+ "split": "val",
+ "detections": {
+  "version": "fairmot",
+  "weights": "/home/minsoogo/Physical_AI/projects/dev3_mot_det_wide/runs/fairmot/fairmot_kittimots_e030.pth",
+  "source": "kittimots",
+  "split": "val",
+  "input": "1216x384",
+  "conf": 0.05,
+  "classes": [
+   "car",
+   "pedestrian"
+  ],
+  "family": "JDT",
+  "det_ms_median": 8.230314997490495,
+  "det_ms_p95": 8.248419006122276,
+  "note": "embeddings from the network id head (no separate ReID)"
+ },
+ "tracker_ms": {
+  "median": 0.20335701992735267,
+  "p95": 0.305722001940012,
+  "frames": 2981
+ },
+ "detector_ms": {
+  "median": 8.230315208435059,
+  "p95": 8.248418807983398
+ },
+ "reid_ms": null,
+ "score_thr": null,
+ "causal_check": "OK",
+ "per_class": {
+  "car": {
+   "HOTA": 0.4550945556132693,
+   "DetA": 0.38537875536883576,
+   "AssA": 0.539938783717991,
+   "LocA": 0.8278876587723754,
+   "MOTA": 0.4721634076472786,
+   "MOTP": 0.8035982640730296,
+   "IDF1": 0.593647867258862,
+   "IDSW": 37,
+   "Frag": 49,
+   "GT_IDs": null,
+   "CLR_TP": 3866,
+   "CLR_FN": 4163,
+   "CLR_FP": 38
+  },
+  "pedestrian": {
+   "HOTA": 0.17415613989259882,
+   "DetA": 0.14464331926568882,
+   "AssA": 0.2107366708682563,
+   "LocA": 0.7845678939211883,
+   "MOTA": 0.16313116223483717,
+   "MOTP": 0.7447708657413867,
+   "IDF1": 0.22162162162162163,
+   "IDSW": 35,
+   "Frag": 57,
+   "GT_IDs": null,
+   "CLR_TP": 652,
+   "CLR_FN": 2695,
+   "CLR_FP": 71
+  }
+ },
+ "mean": {
+  "HOTA": 0.31462534775293405,
+  "DetA": 0.2650110373172623,
+  "AssA": 0.37533772729312365,
+  "LocA": 0.8062277763467818,
+  "MOTA": 0.3176472849410579,
+  "MOTP": 0.7741845649072081,
+  "IDF1": 0.40763474444024184,
+  "IDSW": 72,
+  "Frag": 106
+ }
+}
